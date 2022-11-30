@@ -1,5 +1,5 @@
 * {
-    /* border: 2px red solid; */
+    border: 2px red solid;
 }
 body {
     height: 100%;
@@ -64,10 +64,21 @@ header img {
     align-items: center;
     height: inherit;
 }
-#navbar li:hover {
+
+#navbar a {
+    box-sizing: border-box;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#navbar a:hover {
     background-color: #c0b3c2;
     color: white;
-    transform: translateX(1em);
+    border-bottom: 0.5em solid #9c27b0;
 }
 
 /* Banner */
