@@ -23,6 +23,7 @@ header {
     height: 10em;
     width: fit-content;
     align-items: center;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(17%) saturate(354%) hue-rotate(77deg) brightness(88%) contrast(87%);
 }
 header img {
     margin-left: 5em;
@@ -30,7 +31,7 @@ header img {
     width: 8em;
 }
 .logo:hover {
-    filter: invert(100%);
+    filter: invert(100) saturate(0%);
 }
 .logo_title{
     font-family: Lato, sans-serif;
@@ -76,17 +77,92 @@ header img {
     justify-content: center;
 }
 #navbar a:hover {
-    background-color: #c0b3c2;
-    color: white;
-    border-bottom: 0.5em solid #9c27b0;
+    background-color: #D7B6DB;
+    color: #8CA890;
+    border-bottom: 0.5em solid #8CA890;
 }
 
 /* Banner */
 .banner_image {
     height: 50%;
-    width: auto;
+    width: inherit;
+}
+.banner_image img {
+    width: 100%;
+    height: auto;
 }
 
-.banner_image img {
-    
+/* Article */
+/* Article Wrapper */
+.article_wrapper {
+    position: relative;
+    bottom: 50em; 
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    background-color: #f3e5f5;
+    display: flex;
+    justify-content: center;
 }
+
+article {
+    width: 70%;
+    height: auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: Lato, sans-serif;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    bottom: 25em;
+    opacity: 0.95;
+}
+
+.island_main {
+    height: 40em;
+    width: 100%;
+    border: 2px solid red;
+    margin: 4em 0em;
+    display: flex;
+    border-radius: 5em;
+    background-color: #E9E4F5;
+}
+
+.island_main_content {
+    border: 2px solid black;
+    display: flex;
+    align-items: center ;
+}
+
+.island_main_content img {
+    height: 30em;
+    width: auto;
+    margin: 3em;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(17%) saturate(354%) hue-rotate(77deg) brightness(88%) contrast(87%)
+}
+
+.island_main_content_text {
+    font-size: 2em;
+    text-align: left;
+    margin: 3em;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(17%) saturate(354%) hue-rotate(77deg) brightness(88%) contrast(87%)
+}
+
+.island_main_content_text h1 {
+    text-align: center;
+    font-weight:;
+}
+
+.island {
+    height: 40em;
+    width: 100%;
+    border: 2px solid red;
+    margin: 2em 0em;
+    display: flex;
+}
+
+
+
+.island_content
